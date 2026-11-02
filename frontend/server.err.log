@@ -1,0 +1,995 @@
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vite.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+11:40:15 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:40:15 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:40:15 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:40:15 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:40:15 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:40:15 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:40:39 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:40:39 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:40:39 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:40:39 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:40:39 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:40:39 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:40:44 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:40:44 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:40:44 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:40:44 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:40:44 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:40:44 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:39 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:39 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:39 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:39 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:39 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:39 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:39 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:39 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:39 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:39 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:39 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:39 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:52 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:52 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:52 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:52 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:52 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:52 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:53 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:53 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:53 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:53 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:53 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:53 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:53 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:53 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:53 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:53 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:54 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:54 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:54 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:54 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:54 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:54 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:54 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:54 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:54 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:54 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:54 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:54 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:54 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:54 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:57 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:57 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:57 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:57 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:58 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:58 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:58 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:58 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:58 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:59 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:59 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:59 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:59 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:59 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:59 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:59 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:59 am [vite] (client) [console.error] useEffect must not return anything besides a function, which is used for clean-up.
+
+It looks like you wrote useEffect(async () => ...) or returned a Promise. Instead, write the async function inside your effect and call it immediately:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state
+
+Learn more about data fetching with Hooks: https://react.dev/link/hooks-data-fetching
+11:41:59 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17706:10
+ > recursivelyTraverseDisconnectPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:17694:8
+ > disconnectPassiveEffect node_modules/react-dom/cjs/react-dom-client.development.js:17720:10
+ > doubleInvokeEffectsOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:20404:10
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > recursivelyTraverseAndDoubleInvokeEffectsInDEV node_modules/react-dom/cjs/react-dom-client.development.js:20370:16
+
+11:41:59 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:41:59 am [vite] (client) [Unhandled error] TypeError: destroy is not a function
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:28668:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:1045:29
+ > commitHookEffectListUnmount node_modules/react-dom/cjs/react-dom-client.development.js:13815:16
+ > commitHookPassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13846:10
+ > commitPassiveUnmountEffectsInsideOfDeletedTree_begin node_modules/react-dom/cjs/react-dom-client.development.js:17754:12
+ > recursivelyTraversePassiveUnmountEffects node_modules/react-dom/cjs/react-dom-client.development.js:17575:12
+ > commitPassiveUnmountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:17617:10
+ > flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:20130:8
+ > flushPendingEffects node_modules/react-dom/cjs/react-dom-client.development.js:20060:13
+ > flushSpawnedWork node_modules/react-dom/cjs/react-dom-client.development.js:20016:43
+
+11:41:59 am [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
